@@ -111,7 +111,6 @@ export const App = () => {
 
   return (
     <div>
-      <h1>Image finder</h1>
       <SearchBar onsubmitSearchBar={onSubmitSearchBar} />
       {loading && <Loader />}
       <AppStyle>
