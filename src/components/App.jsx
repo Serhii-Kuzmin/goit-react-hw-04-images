@@ -29,7 +29,8 @@ export const App = () => {
     if (!search) {
       return;
     }
-    addPhotoPage(search, page);
+    // addPhotoPage(search, page);
+    addPhotoPage();
   }, [search, page]);
 
   const onSubmitSearchBar = event => {
@@ -56,7 +57,7 @@ export const App = () => {
     setPhotos([]);
   };
 
-  const addPhotoPage = (search, page) => {
+  const addPhotoPage = () => {
     setLoading(true);
 
     fetchPhoto(search, page, perPage)
